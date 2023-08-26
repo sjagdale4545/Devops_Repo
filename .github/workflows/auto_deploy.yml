@@ -14,7 +14,6 @@ jobs:
         with:
           target-server: 192.168.65.132
           remote-user: samkirkland
-          username: sjagdale4545
-          password: Devops@2023
+          private-ssh-key: ${{ secrets.SSH_KEY }}
           destination-path: var/www/deploy/
           rsync-options: --dry-run --archive --verbose --compress --delete-after --human-readable --exclude=.git* --exclude=.git/ --exclude=README.md --exclude=readme.md --exclude=.gitignore
