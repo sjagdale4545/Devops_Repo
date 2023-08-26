@@ -14,12 +14,12 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
+        timeout_minutes : 1
+        max_attempts : 3
         server: 192.168.65.132
         username: sjagdale4545
         password: Devops@2023
         protocol: ftp
-        port: 990
-        timeout_minutes : 1
-        max_attempts : 3
+        port: 80
         server-dir: var/www/deploy/
        
