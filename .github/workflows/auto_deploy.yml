@@ -17,4 +17,4 @@ jobs:
         server: 192.168.65.132
         username: sjagdale4545
         password: Devops@2023
-        server-dir: /var/www/deploy
+        server-dir: var/www/deploy
