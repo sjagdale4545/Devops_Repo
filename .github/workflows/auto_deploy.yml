@@ -13,6 +13,7 @@ jobs:
         uses: SamKirkland/web-deploy@v1
         with:
           target-server: 192.168.65.132
+          remote-user: samkirkland
           username: sjagdale4545
           password: Devops@2023
           destination-path: var/www/deploy/
