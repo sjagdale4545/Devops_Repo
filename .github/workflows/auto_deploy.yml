@@ -19,5 +19,7 @@ jobs:
         password: Devops@2023
         protocol: ftp
         port: 990
+        timeout_minutes : 1
+        max_attempts : 3
         server-dir: var/www/deploy/
        
